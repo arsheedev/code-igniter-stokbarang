@@ -1,0 +1,132 @@
+:root {
+
+/* =======Size */
+
+    --small: 0.75rem;
+    --smallx: 0.95rem;
+    --base: 1rem;
+    --medium: 1.25rem;
+    --large: 1.5rem;
+    --xl: 1.75rem;
+    --xxl: 2rem;
+    --xxxl: 2.25rem;
+
+/* =======Peletlele */
+
+    --first : #FAF7F0;
+    --second : #CDFCF6;
+    --third : #BCCEF8;
+    --fourth : #98A8F8;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.root {
+    /* background: var(--first); */ 
+    background-image: url(../images/6017056.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    background-size: cover;
+}
+.container {
+    font-family: 'Poppins', sans-serif; 
+    padding: var(--xxxl);
+    height: 100vh;
+}
+/* Nav */
+.container-brand {
+    display: flex;
+    padding: var(--small);
+    width: 8rem;
+    border-bottom: 1px solid black;
+}
+/* main */
+main {
+    margin-top: 3%;
+    padding: var(--base);
+    display: flex;
+    justify-content: space-around;
+}
+/* ============================ JUDUL*/
+.main {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background: white;
+    padding: var(--xxl);
+    height: 75vh;
+    display: flex;
+    width: 55vh;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--large);
+}
+.main p {
+    font-size: var(--medium);
+    font-weight: 420;
+}
+.main .judul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 35vh;
+    margin-bottom: 5rem;
+}
+/* ======================== FORM*/
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+    gap: 1.5rem;
+}
+.form .focusInput {
+    display: flex;
+    flex-direction: column;
+    width: 35vh;
+    outline: none;
+    border: none;
+    border-bottom: 1px black solid;
+    padding: 10px 5px;
+    margin-bottom: 2.5rem;
+    font-size: var(--basic);
+}
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.3s 0.3s ease; 
+    text-indent: -50%;
+    opacity: 1;
+}
+/* =========================BUTTON LOGIN */
+.button {
+    display: flex;
+    border: none;
+    justify-content: center;
+    width: 40vh;
+    padding: 1rem;
+    background-color: var(--third);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.button:hover {
+    background: var(--first);
+    transition: 0.4s ease;
+}
+/* =========================ForgotPass */
+.forgot-password {
+    margin-top: 1rem;
+    display: flex;
+    text-decoration: none;
+}
+/* =========================Responsip Mobile */
+@media screen and (max-width: 700px) {
+    .main {
+      margin-top: 4rem;
+    }
+}
