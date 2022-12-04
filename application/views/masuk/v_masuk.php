@@ -37,6 +37,7 @@
                               <th style='text-align: center;padding:6px;width:60px;'>Uom</th>
                               <th style='text-align: center;padding:6px;width: 140px;'>Tgl Masuk</th> 
                               <th style='text-align: center;padding:6px;width:60px;'>Loc</th>
+                              <th style='text-align: center;padding:6px;width:60px;'>Suplier</th>
                           </tr>
                       </thead>
                       
@@ -52,6 +53,7 @@
                                 <td style='text-align: center;padding: 4px;'><?= $row->satuan; ?></td>
                                 <td style='text-align: center;padding: 4px;'><?= $row->tgl; ?></td>
                                 <td style='text-align: center;padding: 4px;'><?= $row->location; ?></td>
+                                <td style='text-align: center;padding: 4px;'><?= $row->suplier; ?></td>
 							</tr>
 							<?php $no++; } ?>
                       </tbody>

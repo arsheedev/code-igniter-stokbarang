@@ -66,7 +66,6 @@
                   <label for="example-email-input" class="col-xs-3 col-form-label" id="input">Jumlah</label>
                   <div class="col-xs-9">
                     <input id="number-only" type="text" name="jumlah" class="form-control" placeholder="Masukan Angka" required>
-                    
                   </div>
                 </div>
                 <div class="form-group row">
@@ -81,6 +80,12 @@
                     <input type="text" name="location" onkeyup="this.value = this.value.toUpperCase()" class="form-control" placeholder="Location" required>
                   </div>
                 </div-->
+                <div class="form-group row">
+                  <label for="example-email-input" class="col-xs-3 col-form-label" id="input">Konsumen</label>
+                  <div class="col-xs-9">
+                    <input type="text" name="konsumen" class="form-control" placeholder="Konsumen" required>
+                  </div>
+                </div>
                 <div class="form-group row">
                   <label for="example-url-input" class="col-xs-3 col-form-label" id="input"></label>
                   <div class="col-xs-9">

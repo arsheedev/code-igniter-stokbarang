@@ -78,6 +78,12 @@
                     <input type="text" name="location" onkeyup="this.value = this.value.toUpperCase()" required  class="form-control" placeholder="Location" required>
                   </div>
                 </div>
+                <div class="form-group row">
+                  <label for="example-url-input" class="col-xs-3 col-form-label" id="input">Koordinator</label>
+                  <div class="col-xs-9">
+                    <input type="text" name="koordinator" class="form-control" required  placeholder="Koordinator" id="satuan">
+                  </div>
+                </div>
 
                 <div class="form-group row">
                   <label for="example-url-input" class="col-xs-3 col-form-label" id="input"></label>

@@ -10,6 +10,7 @@ class Masuk extends CI_Controller {
 
     //Menampilkan histori barang masuk
     public function index() {
+        $this->is_login();
         $data['masuk'] = $this->m_barang->tampil_data('barang_in')->result();
 
 		$this->load->view('v_header');
@@ -18,6 +19,7 @@ class Masuk extends CI_Controller {
 
     //form input histori barang masuk
     public function form_input() {
+        $this->is_login();
         $data['stock'] = $this->m_barang->tampil_data('stock')->result();
 
 		$this->load->view('v_header');
@@ -26,6 +28,7 @@ class Masuk extends CI_Controller {
 
     //Hasil pencarian barang masuk
     public function hasil_cari_masuk() {
+        $this->is_login();
         $dari = $this->input->post('dari');
         $sampai = $this->input->post('sampai');
 
@@ -39,6 +42,7 @@ class Masuk extends CI_Controller {
 
     //Cetak barang masuk ke pdf
     public function cetak_masuk() {
+        $this->is_login();
         $data['stock'] = $this->m_barang->tampil_data('barang_in')->result();
 
         $this->load->view('cetak_data/lap_masuk', $data);
@@ -46,6 +50,7 @@ class Masuk extends CI_Controller {
 
     //Cetak barang masuk ke excel
     public function excel_masuk() {
+        $this->is_login();
         $data['stock'] = $this->m_barang->tampil_data('barang_in')->result();
 
         $this->load->view('cetak_data/xls_masuk', $data);
@@ -53,6 +58,7 @@ class Masuk extends CI_Controller {
 
     //Cetak filter barang masuk ke pdf
     public function filter_cetak_masuk($dari, $sampai) {
+        $this->is_login();
         $data['stock'] = $this->m_barang->cari_data('barang_in', $dari, $sampai);
 
         $this->load->view('cetak_data/lap_masuk', $data);
@@ -60,6 +66,7 @@ class Masuk extends CI_Controller {
 
     //Cetak filter barang masuk ke excel
     public function filter_excel_masuk($dari, $sampai) {
+        $this->is_login();
         $data['stock'] = $this->m_barang->cari_data('barang_in', $dari, $sampai);
 
         $this->load->view('cetak_data/xls_masuk', $data);
@@ -67,6 +74,7 @@ class Masuk extends CI_Controller {
 
     //Input hostori barang masuk kedatabase
     public function history_input() {
+        $this->is_login();
         $id_barang = $this->input->post('id_barang');
         $kd_barang = $this->input->post('kd_barang');
         $kategori = $this->input->post('kategori');
@@ -74,6 +82,7 @@ class Masuk extends CI_Controller {
         $jumlah = $this->input->post('jumlah');
         $uom = $this->input->post('uom');
         $location = $this->input->post('location');
+        $suplier = $this->input->post('suplier');
 
         $data = array(
             'id_barang' => $id_barang,
@@ -82,11 +91,18 @@ class Masuk extends CI_Controller {
             'nama_barang' => $nama_barang,
             'jumlah' => $jumlah,
             'satuan' => $uom,
-            'location' => $location
+            'location' => $location,
+            'suplier' => $suplier
         );
 
         $this->m_barang->save_data('barang_in', $data);
         redirect('masuk');
+    }
+
+    private function is_login() {
+        if (!$this->session->userdata('login')) {
+          return redirect(base_url());
+        }
     }
 
 }

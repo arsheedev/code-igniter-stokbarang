@@ -31,6 +31,7 @@
                                 <th style='text-align: center;padding:6px;width:60px;'>Qty</th>
                                 <th style='text-align: center;padding:6px;width:60px;'>Uom</th>
                                 <th style='text-align: center;padding:6px;width: 140px;'>Tgl Masuk</th>
+                                <th style='text-align: center;padding:6px;width: 100px;'>Konsumen</th>                             
                                 <!--<th style='text-align: center;padding:6px;width:60px;'>Loc</th>-->
                             </tr>
                         </thead>
@@ -47,6 +48,7 @@
                               echo "<td style='text-align: center;padding: 4px;'>".$row->jumlah."</td>";
                               echo "<td style='text-align: center;padding: 4px;'>".$row->satuan."</td>";
                               echo "<td style='text-align: center;padding: 4px;'>".$row->tgl."</td>";
+                              echo "<td style='text-align: center;padding: 4px;'>".$row->konsumen."</td>";
                               //echo "<td style='text-align: center;padding: 4px;'>".$row->location."</td>";
                               $no++;
                               }

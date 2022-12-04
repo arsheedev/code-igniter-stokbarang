@@ -37,6 +37,7 @@ $pdf->Cell(2.5, 0.7, 'kategori', 1, 0, 'C');
 $pdf->Cell(2, 0.7, 'Qty', 1, 0, 'C');
 $pdf->Cell(1.5, 0.7, 'Uom', 1, 0, 'C');
 $pdf->Cell(4, 0.7, 'Tgl Keluar', 1, 0, 'C');
+$pdf->Cell(2.5, 0.7, 'Konsumen', 1, 0, 'C');
 //$pdf->Cell(1.7, 0.7, 'Location', 1, 0, 'C');
 //$pdf->Cell(1.7, 0.7, 'No kursi', 1, 0, 'C');
 //$pdf->Cell(3, 0.7, 'Kd Bus', 1, 0, 'C');
@@ -50,7 +51,8 @@ foreach ($stock as $row) {
 	$pdf->Cell(2.5, 0.7, $row->kategori, 1, 0,'C');
 	$pdf->Cell(2, 0.7, $row->jumlah,1, 0, 'C');
 	$pdf->Cell(1.5, 0.7, $row->satuan, 1, 0,'C');
-	$pdf->Cell(4, 0.7, $row->tgl,1, 1, 'C');
+	$pdf->Cell(4, 0.7, $row->tgl,1, 0, 'C');
+	$pdf->Cell(2.5, 0.7, $row->konsumen, 1, 1,'C');
 	//$pdf->Cell(1.7, 0.7, $row->location,1, 1, 'C');
 	//$pdf->Cell(1.7, 0.7, $lihat['no_seat'], 1, 0,'C');
 	//$pdf->Cell(3, 0.7, $lihat['kd_bus'], 1, 1,'C');

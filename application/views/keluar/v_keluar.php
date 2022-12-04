@@ -37,7 +37,7 @@
                               <th style='text-align: center;padding:6px;width:60px;'>Qty</th>
                               <th style='text-align: center;padding:6px;width:60px;'>Uom</th>
                               <th style='text-align: center;padding:6px;width: 140px;'>Tgl Keluar</th> 
-                             
+                              <th style='text-align: center;padding:6px;width: 100px;'>Konsumen</th>                             
                           </tr>
                       </thead>
                       
@@ -50,7 +50,8 @@
                                 <td style='text-align: center;padding: 4px;'><?= $row->kategori; ?></td>                
                                 <td style='text-align: center;padding: 4px;'><?= $row->jumlah; ?></td>
                                 <td style='text-align: center;padding: 4px;'><?= $row->satuan; ?></td>
-                                <td style='text-align: center;padding: 4px;'><?= $row->tgl; ?></td>              
+                                <td style='text-align: center;padding: 4px;'><?= $row->tgl; ?></td>
+                                <td style='text-align: center;padding: 4px;'><?= $row->konsumen; ?></td>              
 							</tr>
                             <?php $no++; } ?>
                       </tbody>

@@ -16,7 +16,8 @@
                               <th style='text-align: center;padding:6px;width:60px;'>Qty</th>
                               <th style='text-align: center;padding:6px;width: 100px;'>Uom</th>
                               <th style='text-align: center;padding:6px;width: 100px;'>Tgl Masuk</th>
-                              <th style='text-align: center;padding:6px;width: 100px;'>Loc</th>    
+                              <th style='text-align: center;padding:6px;width: 100px;'>Loc</th>  
+                              <th style='text-align: center;padding:6px;width:60px;'>Suplier</th>  
                           </tr>
                       </thead>
                       
@@ -34,7 +35,8 @@
                   <td style='text-align: center;padding: 4px;'>$row->jumlah</td>
                   <td style='text-align: center;padding: 4px;'>$row->satuan</td>
                   <td style='text-align: center;padding: 4px;'>$row->tgl</td>
-                  <td style='text-align: center;padding: 4px;'>$row->location</td
+                  <td style='text-align: center;padding: 4px;'>$row->location</td>
+                  <td style='text-align: center;padding: 4px;'>$row->suplier</td>
                   </tr>";
                   $no++;
                 }
