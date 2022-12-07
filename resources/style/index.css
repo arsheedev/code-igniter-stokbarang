@@ -1,0 +1,27 @@
+@import url(header.css);
+@import url(allstock.css);
+@import url(incoming.css);
+
+:root {
+    --base: #F5FAFE;
+    --second: #EBF5FF;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+.container {
+    display: flex;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}

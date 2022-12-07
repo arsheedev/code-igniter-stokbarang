@@ -1,0 +1,57 @@
+.container-allstock {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vh;
+    margin-top: 1.9rem;
+}
+.container-allstock table {
+    border: 1px black solid;
+}
+.container-allstock thead tr th {
+    border:  1px black solid;
+}
+.unik {
+    background: rgb(82, 75, 75);
+    color: white;
+}
+.container-allstock li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.container-allstock li a {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    background: var(--base);
+    border-radius: 12px;
+    width: 12rem;
+}
+.container-allstock li a:hover {
+    background-color: var(--second);
+    border-radius: 12px;
+    transition: ease-in-out 0.4s;
+}
+.container-allstock li a span {
+    padding-left: 0.5rem;
+}
+.list-cetak {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.list-cetak a {
+    padding: 1rem;
+    background: var(--base);
+    width: 12rem;
+    border-radius: 12px;
+    color: black;
+}
+.list-cetak a:hover {
+    background-color: var(--second);
+    border-radius: 12px;
+    transition: ease-in-out 0.4s;
+}
