@@ -1,4 +1,10 @@
 ###################
+Notes
+###################
+
+You can copy/download my work, but dont expect I'm helping with your problem/issues
+
+###################
 What is CodeIgniter
 ###################
 
